@@ -1,4 +1,5 @@
 import ExpressItem from "./Components/ExpressItem";
+import NewExpenses from "./Components/NewExp/NewExpenses";
 
 function App() {
   const expenses = [
@@ -29,6 +30,7 @@ function App() {
   ];
   return (
     <div>
+      <NewExpenses></NewExpenses>
       <ExpressItem
         title={expenses[0].title}
         amount={expenses[0].amount}
